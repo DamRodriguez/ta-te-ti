@@ -1,0 +1,79 @@
+.game{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid white;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.169);
+}
+
+.square{
+  border: 1px solid white;
+  padding: 1rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+div.square{
+  display: grid;
+  place-items: center;
+  place-content: center;
+}
+
+.square:hover{
+  cursor: pointer;
+}
+
+h1{
+  display: flex;
+  justify-content: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.is-selected{
+  background-color: rgba(0, 255, 76, 0.296);
+  box-shadow: rgba(255, 254, 254, 0.036) 0px 0px 30px 5px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+}
+
+.turn{
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.turn .square{
+  border: none;
+  border-radius: 1rem;
+  transition: background-position 1s ease-in-out;
+}
+
+.turn .square:hover{
+  cursor:default;
+}
+
+.boardButton{
+  margin-bottom: 2rem;
+  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  border-radius: 2rem;
+  background-color: rgba(255, 0, 0, 0.299);
+  font-size: 1rem;
+  font-weight: 550;
+  letter-spacing: 1px;
+  transition: 0.1s ease-in-out;
+  box-shadow:rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
+  border: none;
+}
+
+.boardButton:hover{
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.board{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,65 @@
+.winner{
+    backdrop-filter: blur(15px);
+    text-align: center;
+    display: grid;
+    position: absolute;
+    width: 50rem;
+    height: 40rem;
+    top: 26rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 1rem;
+    box-shadow: rgba(222, 222, 222, 0.101) 0px 50px 100px -20px, rgba(255, 255, 255, 0.13) 0px 30px 60px -30px, rgba(255, 255, 255, 0.062) 0px -2px 6px 0px inset;
+}
+
+.win {
+    display: grid;
+    place-items: center;
+}
+
+.win img{
+    width: 6rem;
+    position: relative;
+    top: 2rem;
+}
+
+.win .square{
+    border: none;
+    font-size: 10rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.text h2{
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+}
+
+.btn{
+    margin-top: 4rem;
+}
+
+.btn button{
+    background-color: rgba(94, 189, 129, 0.809);
+    padding: 1rem 2rem 1rem 2rem;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    font-weight: 550;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    border: none;
+    transition: 0.1s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.btn button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .winner{
+        width: 25rem;
+        height: 40rem;
+        top: 26rem;
+    }
+}
