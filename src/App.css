@@ -10,8 +10,8 @@
 .square{
   border: 1px solid white;
   padding: 1rem;
-  width: 4rem;
-  height: 4rem;
+  width: 6rem;
+  height: 6rem;
   font-size: 5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -22,18 +22,26 @@ div.square{
   place-content: center;
 }
 
+.char{
+  position: relative;
+  bottom: 0.5rem;
+}
+
 .square:hover{
   cursor: pointer;
 }
 
-h1{
+.board h1{
   display: flex;
   justify-content: center;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 6rem;
 }
 
 .is-selected{
-  background-color: rgba(0, 255, 76, 0.296);
+  background-color: rgba(0, 255, 76, 0.243);
   box-shadow: rgba(255, 254, 254, 0.036) 0px 0px 30px 5px, rgba(0, 0, 0, 0.35) 0px -2px 6px 0px inset;
 }
 
@@ -54,11 +62,12 @@ h1{
 }
 
 .boardButton{
+  margin-top: 2rem;
   margin-bottom: 2rem;
-  padding: 0.7rem 1.5rem 0.7rem 1.5rem;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
   border-radius: 2rem;
   background-color: rgba(255, 0, 0, 0.299);
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 550;
   letter-spacing: 1px;
   transition: 0.1s ease-in-out;
